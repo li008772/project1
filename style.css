@@ -1,5 +1,56 @@
 body
 {
 	font-family:Arial;
-	background-color:87b5ff;
+	background-color:#99c0ff;
 }
+
+ol
+{
+	list-style: none;
+	list-style-type: none;
+}
+
+img
+{
+	width: 13rem;
+	height: 13rem;
+}
+
+.menu li
+{
+	display: inline;
+}
+
+.word-menu li
+{
+	display: inline;
+	position:absolute;
+	left:10rem;
+}
+
+.word-menu a
+{
+	padding-bottom:2rem;
+	padding-left:2rem;
+	padding-top:2rem;
+	padding-right:2rem;
+	color:#ffffff;
+	border-style: solid;
+	border-color: #a8a8a8;
+	background-color: #a8a8a8;
+	border-radius: 25px;
+}
+#first-element
+{
+	padding-top:5rem;
+}
+#second-element
+{
+	padding-top:5rem;
+}
+
+
+
+
+
+
