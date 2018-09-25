@@ -39,6 +39,7 @@ img
 	border-color: #a8a8a8;
 	background-color: #a8a8a8;
 	border-radius: 25px;
+	text-decoration: none;
 }
 #first-element
 {
@@ -48,6 +49,23 @@ img
 {
 	padding-top:5rem;
 }
+
+.galary
+{
+	display: none;
+	position: fixed; 
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: black;
+	text-align: center;
+}
+
+
+
+
+
 
 
 
