@@ -1,7 +1,6 @@
-<script>
-alert("kill me");
+alert("hello");
 function openSlide()
 {
-	alert('hello');
+	alert("hi");
 }
-</script>
+documnet.getElementByClass('galary').style.display:"block";
