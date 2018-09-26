@@ -167,7 +167,7 @@ function sortTable()
         x = rows[i].getElementsByTagName("TR")[3];
         y = rows[i + 1].getElementsByTagName("TR")[3];
 	  }
-	  else if(choice === "completeSort")
+	  else if(choice == "completeSort")
 	  {
 		  if(rows[i].style.textDecoration=="lineThrough")
 		  {
@@ -184,6 +184,11 @@ function sortTable()
 		  else if(rows[i+1].style.textDecoration=="none")
 		  {
 		    y=0;
+		  }
+		  if(x > y)
+		  {
+			  switchPosition = true;
+              break;
 		  }
 	  }
 	  else if(choice == "deadlineSort")
