@@ -1,6 +1,8 @@
 var pointer = 0;
 var i;
-window.onload=function()
+
+
+function addTrigger()
 {
 var taskState = document.getElementById("myTable");
 for (var i=1;i < taskState.rows.length;i++)
@@ -20,6 +22,7 @@ for (var i=1;i < taskState.rows.length;i++)
 	}
 }
 }
+
 
 function openSlide()
 {
@@ -140,6 +143,7 @@ function addJob()
 	newcell2.appendChild(newtext2);
 	newcell3.appendChild(newtext3);
 	newcell4.appendChild(newtext4);
+	addTrigger();
 }
 function sortTable()
 {
@@ -160,8 +164,8 @@ function sortTable()
       shouldSwitch = false;
 	  if(choice == "recentSort")
 	  {
-        x = rows[i].getElementsByTagName("TD")[3];
-        y = rows[i + 1].getElementsByTagName("TD")[3];
+        x = rows[i].getElementsByTagName("TR")[3];
+        y = rows[i + 1].getElementsByTagName("TR")[3];
 	  }
 	  else if(choice === "completeSort")
 	  {
@@ -192,9 +196,6 @@ function sortTable()
 		  x = rows[i].getElementsByTagName("TD")[2];
           y = rows[i + 1].getElementsByTagName("TD")[2];
 	  }
-	  alert(x.innerHTML.toLowerCase());
-	  alert(y.innerHTML.toLowerCase());
-
       if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase())
 	  {
         switchPosition = true;

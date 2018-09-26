@@ -148,18 +148,18 @@ th,td
 	padding-right:8rem;
 	padding-top:2rem;
 }
-tbody
+tr
 {
 	cursor:pointer;
 	background:#f2f2f2;
 	transition:0.3s ease;
 }
-tbody:hover
+tbody tr:hover
 {
 	background: #d1d1d1;
 }
 
-tbody.checked
+tr.checked
 {
 	background:#8c8c8c;
 	text-decoration:line-through;
