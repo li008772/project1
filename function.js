@@ -103,7 +103,7 @@ function playlist()
 	timer = setInterval(function()
 	{
 		slidePlus();
-	},1000)
+	},10000)
 	running = true;
 	}
 	else if(running == true)
@@ -113,11 +113,11 @@ function playlist()
 	}
 	if(ele.style.color=="rgba(0,0,0)")
 	{
-		ele.style.color=="#ce0404";
+		ele.style.color="#ce0404";
 	}
 	else if(ele.style.color=="red")
 	{
-		ele.style.color=="black";
+		ele.style.color="black";
 	}
 	
 }
