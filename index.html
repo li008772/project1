@@ -11,38 +11,78 @@
    <li>
     <a href="https://li008772.github.io/project1/index.html">Picture Gallery</a>
    </li>
+   <li>
+    <a href="https://li008772.github.io/project1/todolist.html">To do list</a>
+   </li>
   </ol>
   <p></p>
   </p>
   <p id="second-element">
    <ol class="menu">
     <li> 
-     <img src="https://li008772.github.io/project1/moon.jpg" onclick="openSlide()" alt="new moon">
+     <img src="https://li008772.github.io/project1/moon.jpg" onclick="openSlide();showSlide(0)" alt="new moon">
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/nightsky.png" class="lightbox-trigger"><img src="https://li008772.github.io/project1/nightsky.png" alt="night sky"></a>
+     <img src="https://li008772.github.io/project1/nightsky.png" onclick="openSlide();showSlide(1)" alt="night sky">
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/pig.png" class="lightbox-trigger"><img src="https://li008772.github.io/project1/pig.png" alt="flying pig"></a>
+     <img src="https://li008772.github.io/project1/pig.png" onclick="openSlide();showSlide(2)" alt="flying pig">
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/sign.png" class="lightbox-trigger"><img src="https://li008772.github.io/project1/sign.png" alt="beautiful symbol"></a>
+     <img src="https://li008772.github.io/project1/sign.png" onclick="openSlide();showSlide(2)" alt="beautiful symbol"></a>
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/flower.jpg" class="lightbox-trigger"><img src="https://li008772.github.io/project1/flower.jpg" alt="spider lily field"></a>
+     <img src="https://li008772.github.io/project1/flower.jpg" onclick="openSlide();showSlide(2)" alt="spider lily field"></a>
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/just.png" class="lightbox-trigger"><img src="https://li008772.github.io/project1/just.png" alt="Just do It!"></a>
+    <img src="https://li008772.github.io/project1/just.png" onclick="openSlide();showSlide(2)" alt="Just do It!"></a>
 	</li>
 	<li> 
-     <a href="https://li008772.github.io/project1/coffee.png" class="lightbox-trigger"><img src="https://li008772.github.io/project1/coffee.png" alt="delicious coffee"></a>
+    <img src="https://li008772.github.io/project1/coffee.png" onclick="openSlide();showSlide(2)" alt="delicious coffee"></a>
+	</li>
+	<li> 
+    <img src="https://li008772.github.io/project1/sun.jpg" onclick="openSlide();showSlide(2)" alt="sun"></a>
+	</li>
+	<li> 
+    <img src="https://li008772.github.io/project1/coffee.png" onclick="openSlide();showSlide(2)" alt="delicious coffee"></a>
+	</li>
+	<li> 
+    <img src="https://li008772.github.io/project1/coffee.png" onclick="openSlide();showSlide(2)" alt="delicious coffee"></a>
 	</li>
 	</ol>
   </p>
-  <div class="galary">
+  <div class="galary" id="mygalary">
+   <button type="button" id="exitButton" onclick="closeSlide()">X</button>
     <div class="slide">
-	  <img src="https://li008772.github.io/project1/moon.jpg" style="width:100%">
+	  <img src="https://li008772.github.io/project1/moon.jpg">
 	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/nightsky.png">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/pig.png">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/sign.png">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/flower.jpg">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/just.png">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/coffee.png">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/sun.jpg">
+	</div>
+	<div class="slide">
+	  <img src="https://li008772.github.io/project1/just.png">
+	</div>
+	<a id="leftbutton" onclick="slideMinus()">&#10094</a>
+	<a id="rightbutton" onclick="slidePlus()">&#10095</a>
+	<button type="button" id="autoplay" onclick="playlist()" >autoplay</button>
   </div>
   <script type="text/javascript" src = "function.js"></script>
  </body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src = "function.js"></script>
+ </head>
+ <body>
+  <p id="first-element">
+  <ol class="word-menu">
+   <li>
+    <a href="https://li008772.github.io/project1/index.html">Picture Gallery</a>
+   </li>
+   <li>
+    <a href="https://li008772.github.io/project1/todolist.html">To do list</a>
+   </li>
+  </ol>
+  <p></p>
+  </p>
+  <p2>
+   <h1>My list</h1>
+  <input type="text" id="myInput" placeholder="Things to do">
+  <input type="text" id="dateInput" placeholder="when to do">
+  <select id="categoryInput" name="category">
+  <option value="homework">homework</option>
+  <option value="event">event</option>
+  <option value="job">job</option>
+  <option value="housework">housework</option>
+  </select>
+  <button type="button" id="add" onclick="addJob()"> Add </button>
+  <select id="sortInput" name="sorting">
+  <option value="completeSort">Complete vs Incomplete</option>
+  <option value="deadlineSort">deadline</option>
+  <option value="recentSort">recently added</option>
+  <option value="categorySort">category</option>
+  </select>
+  <button type="button" id="sort" onclick="sortTable()"> Sort </button>
+  <table id="myTable" style="wideth:40rem">
+   <thead>
+    <th>Task</th>
+	<th>Deadline</th>
+	<th>Category</th>
+	<th>time added</th>
+   </thead>
+   <tbody>
+   <td>Task</td>
+   <td>12/12/1996</td>
+   <td>Job</td>
+   <td>example</td>
+   </tbody>
+  </table>
+  </p2>
+  
+  </body>
+</html>
